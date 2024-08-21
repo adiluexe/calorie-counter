@@ -46,6 +46,7 @@ header h1:hover {
 }
 
 .container form {
+  padding-bottom: 1rem;
   width: 100%;
   font-size: 1.25rem;
 }
@@ -75,18 +76,27 @@ legend {
   flex-direction: column;
 }
 
-button {
+.controls {
+  padding-top: 1rem;
+}
+
+button,
+select {
+  padding: 0 1rem;
+  border: none;
+  font-family: "Merriweather", serif;
   cursor: pointer;
   text-decoration: none;
-  background-color: var(--light-yellow);
-  border: 2px solid var(--dark-yellow);
+  background-color: var(--yellow);
+  color: var(--dark);
+  font-weight: bold;
+  border-radius: 0.25rem;
 }
 
 button,
 input,
 select {
   min-height: 24px;
-  color: var(--dark-blue);
 }
 
 fieldset,
@@ -94,7 +104,7 @@ label,
 button,
 input,
 select {
-  margin-bottom: 10px;
+  margin-bottom: 0.25rem;
 }
 
 .output {
