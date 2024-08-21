@@ -45,6 +45,26 @@ header h1:hover {
   letter-spacing: 0.1rem;
 }
 
+.container form {
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+form input,
+select {
+  color: var(--dark);
+  font-family: "Merriweather";
+}
+
+fieldset {
+  border: 0.1rem solid var(--light);
+  padding: 0.5rem;
+}
+
+legend {
+  padding: 0.25rem;
+}
+
 label,
 legend {
   font-weight: bold;
