@@ -8,11 +8,46 @@
 }
 
 *,
-*::before,
-*::after {
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  line-height: calc(1em + 0.5rem);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 body {
@@ -54,7 +89,10 @@ header h1:hover {
 form input,
 select {
   color: var(--dark);
-  font-family: "Merriweather";
+}
+
+input#budget {
+  margin-bottom: 1rem;
 }
 
 fieldset {
@@ -84,13 +122,19 @@ button,
 select {
   padding: 0 1rem;
   border: none;
-  font-family: "Merriweather", serif;
   cursor: pointer;
   text-decoration: none;
   background-color: var(--yellow);
   color: var(--dark);
   font-weight: bold;
   border-radius: 0.25rem;
+  transition: 0.5s ease;
+}
+
+button:hover {
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  font-weight: 900;
 }
 
 button,
@@ -108,9 +152,7 @@ select {
 }
 
 .output {
-  border: 2px solid var(--light-grey);
-  padding: 10px;
-  text-align: center;
+  padding-bottom: 2rem;
 }
 
 .hide {
@@ -118,14 +160,21 @@ select {
 }
 
 .output span {
-  font-weight: bold;
-  font-size: 1.2em;
+  font-weight: 900;
+  font-size: 2rem;
 }
 
-.surplus {
-  color: var(--light-pink);
+hr {
+  margin: 0.5rem;
+  padding: 0.1rem;
+  border: none;
+  background-color: var(--light);
 }
 
-.deficit {
-  color: var(--light-green);
+footer {
+  width: 100%;
+  padding: 1rem;
+  font-weight: 700;
+  color: var(--dark);
+  background-color: var(--yellow);
 }
