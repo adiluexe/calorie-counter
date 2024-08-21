@@ -178,3 +178,13 @@ footer {
   color: var(--dark);
   background-color: var(--yellow);
 }
+
+footer h3 {
+  transition: 0.5s ease;
+}
+
+footer h3:hover {
+  cursor: crosshair;
+  font-size: 1.25rem;
+  letter-spacing: 0.1rem;
+}
